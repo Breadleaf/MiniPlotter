@@ -20,11 +20,13 @@ namespace Calibrations
         int maxPulseWidth;
     };
     const Profile entries[] = {
-        {.minPulseWidth = 1000, .maxPulseWidth = 2000}, // cbp#0
-        {.minPulseWidth = 1000, .maxPulseWidth = 2000}, // cbp#1
-        {.minPulseWidth = 1000, .maxPulseWidth = 2000}, // cbp#2
-        {.minPulseWidth = 1000, .maxPulseWidth = 2000}, // cbp#3
-        {.minPulseWidth = 1000, .maxPulseWidth = 2000}, // cbp#4
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM - 400 + 65 + 00, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM + 300 - 100 + 0}, // cbp#0
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM - 400 + 70 + 00, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM + 300 - 150 + 0}, // cbp#1
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM - 400 + 130 + 0, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM + 300 + 0000000}, // cbp#2
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM - 400 + 130 + 0, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM + 300 - 10 + 00}, // cbp#3
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM - 400 + 30 + 00, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM + 300 - 210 + 0}, // cbp#4
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM},                                 // non-calibrated profile
+        {.minPulseWidth = SERVO_DEFAULT_MIN_PWM - 300, .maxPulseWidth = SERVO_DEFAULT_MAX_PWM + 300}                      // average profile
     };
 
 } // namespace Calibrations

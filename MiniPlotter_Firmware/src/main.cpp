@@ -10,13 +10,12 @@ namespace cs = CalibratedServos;
 
 const int numberServos = 5;
 
-// with calibration data
 cs::CalibratedServo servos[5] = {
-    cs::CalibratedServo(3, 0, SERVO_DEFAULT_MIN_PWM - 400 + 65 + 00, SERVO_DEFAULT_MAX_PWM + 300 - 100),
-    cs::CalibratedServo(5, 1, SERVO_DEFAULT_MIN_PWM - 400 + 70 + 00, SERVO_DEFAULT_MAX_PWM + 300 - 150),
-    cs::CalibratedServo(6, 2, SERVO_DEFAULT_MIN_PWM - 400 + 130 + 0, SERVO_DEFAULT_MAX_PWM + 300),
-    cs::CalibratedServo(9, 3, SERVO_DEFAULT_MIN_PWM - 400 + 130 + 0, SERVO_DEFAULT_MAX_PWM + 300 - 10),
-    cs::CalibratedServo(10, 4, SERVO_DEFAULT_MIN_PWM - 400 + 30 + 0, SERVO_DEFAULT_MAX_PWM + 300 - 210),
+    cs::CalibratedServo(3, 0),
+    cs::CalibratedServo(5, 1),
+    cs::CalibratedServo(6, 2),
+    cs::CalibratedServo(9, 3),
+    cs::CalibratedServo(10, 4),
 };
 
 // helper definitions
