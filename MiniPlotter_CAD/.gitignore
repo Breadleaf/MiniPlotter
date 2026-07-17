@@ -8,3 +8,4 @@
 Private
 *.bak
 .DS_Store
+*outputs/*
